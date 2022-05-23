@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Store</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+
+</head>
+<body>
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+              <a href="#"><img src="img/BMW Group - Logo.png" alt="Logo" ></a>
+            </div>
+            <ul>
+                <li><a href="#seccion2">INTRODUCCIÓN</a></li>
+                <li><a href="#seccion3">MANTENIMIENTOS</a></li>
+                <li><a href="#seccion4">PRESENTACIÓN</a></li>
+                <li><a href="#seccion5">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="Inicio" id="seccion1">
+
+      <article class="wrap1">
+      <div class="imagenes">   
+        <a href="#"><img src="img/BMW 1000 - Perfil.jpg" alt="BMW - 1000"" ></a>  
+       </div> 
+      
+
+          <div class="presentacion">
+               <article class="perfil">
+                  <h1>CONÓZCANOS</h1>
+                  <br>
+                  <p>Somos aliados directos de la gran marca BMW, nos enfocamos en la calidad, la prestación de un buen servicio 
+                     y la seguridad de esa moto que llenará de adrenalina cada salida.
+                     Impactamos el mercado de manera positiva, procurando que cada aventura sin importar lo lejos o cerca que sea, 
+                     esté llena de excelentes expectativas y las mejores recomendaciones. 
+                     <br>
+                     <br>
+                     Tenemos la moto que se puede acomodar a su gusto, tanto en físico como en comodidad. Tenemos aquella moto que puede 
+                     llegar a desarrollar la velocidad que le temple las arrugas o por el contrario, aquella en la que puede llegar a subir 
+                     la montaña más alta haciendolo sentir de nuevo como un niño. 
+                    </p>
+
+                      <ul>
+                          <br>
+                        <li><a class="down animate_animated animatebounceInDown animate_slower  3s  infinite fa-solid fa-circle-chevron-down" href="#conducir"> PRUEBA DE CONDUCCIÓN </a></li> 
+                        <li><a class="down animate_animated animatebounceInDown animate_slower  3s fa-solid fa-circle-chevron-down" href=""> VER PORTAFOLIO</a></li> 
+                    </ul>
+                  </article>
+                </div>        
+    </section>
+     
+    <section class="Introducción" id="seccion2">
+        <div class="wrap2">
+            <h1>Introducción</h1>
+            <p>Alto cilindraje, bajo cilindraje y altas velocidades</p>
+            <br>
+            <div class="container justify-content">
+              <article class="item1"> <img src="img/Alto cilindraje.jpg" alt="Alto cilindraje"> </article> 
+              <article class="item2"> <img src="img/Bajo cilindraje.jpg" alt="Bajo cilindraje"> </article> 
+              <article class="item3"> <img src="img/Altas velocidades.jpg" alt="Altas velocidades"> </article> 
+            </div>
+</section>
+
+<section class="Mantenimiento" id="seccion3">
+    <div class="wrap">
+        <h1>Mantenimientos</h1>
+        <p>Aquí, manejamos mantenimientos preventivo, predictivo y correctivo, tanto en carros como en motos.</p>
+        <br>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/Mantenimiento 1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Mantenimiento 2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Mantenimiento 3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Mantenimiento 4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Mantenimiento 5.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+</section>
+
+<section class="youTube" id="seccion4">
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/zj8Bcn_aCzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</section>
+
+<section class="contacto" id="seccion5">
+  <div class="wrap3">
+      <h1>CONTACTO</h1>
+      <p>Esteban Villa <br>
+         BMWStore@gmail.com  <br>
+         +57.311.322.9643 </p>
+  </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+        </script>
+    </body>
+</html>
